@@ -1,9 +1,3 @@
-/* 
-  Todo: 
-   2) disable button after it's been clicked
-*/
-
-
 function createBoard(row, col){
     a = []
     for(var i=0; i < row; i++){
