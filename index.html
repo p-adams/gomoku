@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gomoku</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+     <h1 id="title">{{title}}</h1>
+     <h3>{{winner}}</h3>
+   <ul>
+    <li v-for="slots in board">
+      <ul id="board">
+        <li v-for="slot in slots" track-by="$index">
+          <button @click="handleClick($index, $parent.$index)"
+          :class="{'green': isGreen($index, $parent.$index), 
+          'blue': isBlue($index, $parent.$index)}"
+          >
+            {{slot}}
+          </button></li>
+      </ul>
+    </li>
+   </ul>
+</div>
+    
+    <script src="node_modules/vue/dist/vue.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

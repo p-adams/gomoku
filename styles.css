@@ -1,0 +1,38 @@
+body{
+  background-color: darkgray;
+}
+#app{
+  background-color: lightgray;
+   box-shadow: 10px 10px 5px #888888;
+  width: 75%;
+}
+#board{
+  margin-left: 100px;
+}
+li{
+  display: inline;
+  padding: 5px;
+}
+button{
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  border: none;
+  border-radius: 25px;
+}
+.green{
+  background-color: #41B883;
+}
+.blue{
+  background-color: #35495E;
+}
+#title{
+  text-align: center;
+  color: darkslategray;
+  font-weight: bolder;
+}
+h3{
+  text-align: center;
+  color: darkslategray;
+  font-weight: bolder;
+}
